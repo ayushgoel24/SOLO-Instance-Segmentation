@@ -1,0 +1,32 @@
+solo_hyperparameters:
+    num_classes: 4
+    in_channels: 256
+    seg_feat_channels: 256
+    stacked_convs: 7
+    strides: [8, 8, 16, 32, 32]
+    scale_ranges:
+        - [1, 96]
+        - [48, 192]
+        - [96, 384]
+        - [192, 768]
+        - [384, 2048]
+    epsilon: 0.2
+    num_grids: [40, 36, 24, 16, 12]
+    mask_loss_cfg:
+        weight: 3
+    cate_loss_cfg:
+        gamma: 2
+        alpha: 0.25
+        weight: 1
+    postprocess_cfg:
+        cate_thresh: 0.2
+        mask_thresh: 0.5
+        pre_NMS_num: 50
+        keep_instance: 5
+        IoU_thresh: 0.5
+    feature_dims:
+        - [200, 272]
+        - [200, 272]
+        - [100, 136]
+        - [50, 68]
+        - [50, 68]

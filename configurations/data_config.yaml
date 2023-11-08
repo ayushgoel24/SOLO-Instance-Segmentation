@@ -1,0 +1,28 @@
+image_transform:
+    - torchvision.transforms.Resize:
+        size:
+            - 800
+            - 1066
+    - torchvision.transforms.Normalize:
+        mean:
+            - 0.485
+            - 0.456
+            - 0.406
+        std:
+            - 0.229
+            - 0.224
+            - 0.225
+    - torchvision.transforms.Pad:
+        padding:
+            - 11
+            - 0
+
+mask_transform:
+    - torchvision.transforms.Resize:
+        size:
+            - 800
+            - 1066
+    - torchvision.transforms.Pad:
+        padding:
+            - 11
+            - 0
