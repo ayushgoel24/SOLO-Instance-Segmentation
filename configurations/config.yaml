@@ -30,3 +30,9 @@ solo_hyperparameters:
         - [100, 136]
         - [50, 68]
         - [50, 68]
+
+data_paths:
+    imgs_path: './data/hw3_mycocodata_img_comp_zlib.h5'
+    masks_path: './data/hw3_mycocodata_mask_comp_zlib.h5'
+    labels_path: './data/hw3_mycocodata_labels_comp_zlib.npy'
+    bboxes_path: './data/hw3_mycocodata_bboxes_comp_zlib.npy'
