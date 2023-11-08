@@ -22,3 +22,8 @@ class ConfigurationUtils:
     def load_transform(key):
         config = ConfigurationUtils.load_config_from_yaml('config/data_config.yaml')
         return ConfigurationUtils.create_transforms_from_config(config[key])
+    
+    @staticmethod
+    def load_file_paths():
+        data_paths = ConfigurationUtils.load_config_from_yaml('config/config.yaml').get('data_paths', {})
+        return data_paths.get('imgs_path', ''), data_paths.get('masks_path', ''), data_paths.get('labels_path', ''), data_paths.get('bboxes_path', '')
