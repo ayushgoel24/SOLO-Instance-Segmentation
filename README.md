@@ -13,11 +13,9 @@ This repository contains the implementation of the instance segmentation model u
 - [Edge Cases](#edge-cases)
 - [Scope of Improvements](#scope-of-improvements)
 - [Dependencies](#dependencies)
-- [Usage](#usage)
 - [Results](#results)
 - [License](#license)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 ## Overview
 The project addresses the problem of segmenting and identifying individual objects within an image, regardless of the object's class. This is particularly challenging in cluttered scenes where objects might overlap or be densely packed. Instance segmentation is a crucial task in computer vision that has applications across various domains, including autonomous vehicles, robotics, and medical imaging. The SOLO model aims to simplify and enhance the instance segmentation process by using a direct prediction strategy that eliminates the need for bounding box detection or object proposals as in two-stage methods, potentially improving both accuracy and inference speed.
@@ -127,10 +125,9 @@ Showcase the results achieved by the model, including performance metrics and vi
 ![Validation Loss](./results/validation_loss.png)
 
 ## License
-State the license under which this project is released.
+
+This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
-Provide contact details for users to reach out with questions or collaborations.
 
-## Acknowledgements
-Credits to contributors, institutions, or resources that supported the development of this project.
+For any issues, queries, or feedback, please contact: [ayush.goel2427@gmail.com].
